@@ -32,7 +32,7 @@
 <script>
 
 import { SfSteps, SfButton } from '@storefront-ui/vue';
-import CartPreview from '~/components/Checkout/CartPreview';
+import CartPreview from '~/components/checkout/CartPreview';
 import { computed, useRoute, useRouter } from '@nuxtjs/composition-api';
 
 const STEPS = {
