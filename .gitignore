@@ -96,3 +96,5 @@ version
 **/test/e2e/report.json
 .nuxt
 static/sw.js
+
+.env
