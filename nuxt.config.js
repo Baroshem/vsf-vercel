@@ -56,7 +56,7 @@ const config = {
     // to core
     './modules/cms/build',
     '@nuxtjs/composition-api/module',
-    // '@nuxtjs/pwa',
+    '@nuxtjs/pwa',
     '@nuxt/typescript-build',
     '@nuxtjs/style-resources',
     [
@@ -199,98 +199,68 @@ const config = {
       }
     }
   },
-  // pwa: {
-  //   manifest: {
-  //     name: 'VSF Next: Shopify APP',
-  //     lang: 'en',
-  //     shortName: 'SPVSF2',
-  //     startUrl: '/',
-  //     display: 'standalone',
-  //     backgroundColor: '#5ece7b',
-  //     themeColor: '#5ece7b',
-  //     description: 'This is the Shopify PWA app for VSF Next',
-  //     icons: [
-  //       {
-  //         src: '/icons/android-icon-48x48.png',
-  //         sizes: '48x48',
-  //         type: 'image/png'
-  //       },
-  //       {
-  //         src: '/icons/android-icon-72x72.png',
-  //         sizes: '72x72',
-  //         type: 'image/png'
-  //       },
-  //       {
-  //         src: '/icons/android-icon-96x96.png',
-  //         sizes: '96x96',
-  //         type: 'image/png'
-  //       },
-  //       {
-  //         src: '/icons/android-icon-144x144.png',
-  //         sizes: '144x144',
-  //         type: 'image/png'
-  //       },
-  //       {
-  //         src: '/icons/android-icon-168x168.png',
-  //         sizes: '168x168',
-  //         type: 'image/png'
-  //       },
-  //       {
-  //         src: '/icons/android-icon-192x192.png',
-  //         sizes: '192x192',
-  //         type: 'image/png'
-  //       },
-  //       {
-  //         src: '/icons/android-icon-512x512.png',
-  //         sizes: '512x512',
-  //         type: 'image/png'
-  //       }
-  //     ]
-  //   },
-  //   meta: {
-  //     name: 'VSF Next: Shopify APP',
-  //     author: 'Aureate labs',
-  //     backgroundColor: '#5ece7b',
-  //     description:
-  //       'This is the Shopify PWA app for VSF Next - Developed by Aureate labs',
-  //     themeColor: '#5ece7b',
-  //     ogHost: 'shopify-pwa.aureatelabs.com'
-  //   },
-  //   icon: {
-  //     iconSrc: 'src/static/android-icon-512x512.png'
-  //   },
-  //   workbox: {
-  //     offlineStrategy: 'StaleWhileRevalidate',
-  //     runtimeCaching: [
-  //       {
-  //         // Match any request that ends with .png, .jpg, .jpeg or .svg.
-  //         urlPattern: /\.(?:png|jpg|jpeg|svg|woff|woff2)$/,
-  //         // Apply a cache-first strategy.
-  //         handler: 'CacheFirst',
-  //         options: {
-  //           // Use a custom cache name.
-  //           cacheName: 'SPVSF2Assets',
-
-  //           // Only cache 100 images.
-  //           expiration: {
-  //             maxEntries: 100
-  //           }
-  //         }
-  //       },
-  //       {
-  //         urlPattern: /^\/(?:(c)?(\/.*)?)$/,
-  //         handler: 'StaleWhileRevalidate',
-  //         strategyOptions: {
-  //           cacheName: 'SPVSF2cached',
-  //           cacheExpiration: {
-  //             maxEntries: 200,
-  //             maxAgeSeconds: 3600
-  //           }
-  //         }
-  //       }
-  //     ]
-  //   }
-  // }
+  pwa: {
+    manifest: {
+      name: 'VSF Next: Shopify APP',
+      lang: 'en',
+      shortName: 'SPVSF2',
+      startUrl: '/',
+      display: 'standalone',
+      backgroundColor: '#5ece7b',
+      themeColor: '#5ece7b',
+      description: 'This is the Shopify PWA app for VSF Next',
+      icons: [
+        {
+          src: '/icons/android-icon-48x48.png',
+          sizes: '48x48',
+          type: 'image/png'
+        },
+        {
+          src: '/icons/android-icon-72x72.png',
+          sizes: '72x72',
+          type: 'image/png'
+        },
+        {
+          src: '/icons/android-icon-96x96.png',
+          sizes: '96x96',
+          type: 'image/png'
+        },
+        {
+          src: '/icons/android-icon-144x144.png',
+          sizes: '144x144',
+          type: 'image/png'
+        },
+        {
+          src: '/icons/android-icon-168x168.png',
+          sizes: '168x168',
+          type: 'image/png'
+        },
+        {
+          src: '/icons/android-icon-192x192.png',
+          sizes: '192x192',
+          type: 'image/png'
+        },
+        {
+          src: '/icons/android-icon-512x512.png',
+          sizes: '512x512',
+          type: 'image/png'
+        }
+      ]
+    },
+    meta: {
+      name: 'VSF Next: Shopify APP',
+      author: 'Aureate labs',
+      backgroundColor: '#5ece7b',
+      description:
+        'This is the Shopify PWA app for VSF Next - Developed by Aureate labs',
+      themeColor: '#5ece7b',
+      ogHost: 'shopify-pwa.aureatelabs.com'
+    },
+    icon: {
+      iconSrc: 'src/static/android-icon-512x512.png'
+    },
+    workbox: {}
+  }
 };
 
 export default config;
